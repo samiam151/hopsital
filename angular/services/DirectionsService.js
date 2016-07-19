@@ -1,17 +1,40 @@
 app.service('DirectionsService', function(){
     this.topDirections = [
-        'Learn about my medicines',
-        'Watch videos picked just for me',
-        'Rate my pain'
+        {
+            item: 'Learn about my medicines',
+            url: '#/medications'
+        },
+         {
+            item: 'Watch videos picked just for me',
+            url: '#/videos'
+        }, {
+            item: 'Rate my pain',
+            url: '#/pain'
+        }
     ];
 
     this.bottomDirections = [
-        'See my medicines',
-        'Browse health videos',
-        'Watch TV',
-        'Listen to Music',
-        'Order a meal'
+        {
+            item: 'See my medicines',
+            url: '#/medications'
+        },
+        {
+            item: 'Browse health videos',
+            url: '#/medications'
+        },
+        {
+            item: 'Watch TV',
+            url: '#/medications'
+        },
+        {
+            item: 'Listen to Music',
+            url: '#/medications'
+        },
+        {
+            item: 'Order a meal',
+            url: '#/medications'
+        }   
     ];
 
-    this.allDirections = this.topDirections.concat(this.bottomeDirections);
+    // this.allDirections = this.topDirections.concat(this.bottomeDirections);
 });

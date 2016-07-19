@@ -8,10 +8,10 @@
        "Vesicare",
        "Lunesta"
     ],
+    "illnes": "High Blood Pressure",
     "todos" : [
       "Watch Scandel",
-      "Take medications",
       "Read the news",
-      "Hire Nick Sam as UI Engineer"
+      "Take medications"
     ]
 }

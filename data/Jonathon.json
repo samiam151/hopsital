@@ -10,10 +10,10 @@
         "Vesicare",
         "Hydrocodone"
     ],
+    "illness": "Testicular Cancer",
     "todos" : [
       "Change the light bulbs",
       "Take medications",
-      "Read the news",
-      "Hire Nick Sam as UI Engineer"
+      "Read the news"
     ]
 }

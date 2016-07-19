@@ -10,10 +10,10 @@
         "Lipitor",
         "Lyrica"
     ],
+    "illness": "Muscular Fibrosis",
     "todos" : [
         "Learn about Java programming",
-        "Take medications",
-        "Read the news",
-        "Hire Nick Sam as UI Engineer"
+        "Surf Quora",
+        "Take medications"
     ]
 }
