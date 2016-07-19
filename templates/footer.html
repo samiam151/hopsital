@@ -1,0 +1,22 @@
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <!-- Logo -->
+            <div class="col-md-4 footer-logo">getwell<span class='smiley'>:)</span>soon!</div>
+
+            <!-- Room Info -->
+            <div class="col-md-4 text-center room_info">
+                <div ng-if="patient" class='fade-in'>
+                    <p>Unit: {{patient.unit}} Room: {{patient.room}}</p>
+                    <p>Phone: {{patient.phoneNumber}}</p>
+                </div>
+            </div>
+                
+            <!-- Hospital Logo -->
+            <div class="col-md-4">
+                <img src="static/img/hospital-logo.png" alt="hospital-logo" class='hospital-logo'>
+            </div>
+        </div>
+    </div>
+</footer>

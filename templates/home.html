@@ -1,0 +1,24 @@
+<div class="fade-in" ng-controller='HomeController as home'>
+    <!--Top Row-->
+    <div class="row">
+        <div class="col-md-3 title-block">Here are some things we would like you to do while you are here.</div>
+        <home-block ng-repeat='top in home.tops' class='col-md-3 text-center'>
+            <p ng-bind='top'></p>
+        </home-block>
+    </div>
+
+    <!--Bottom Row-->
+    <div class="row">
+        <div class="carousel">
+            <home-block class='col-md-1 text-center'>one</home-block>
+            <home-block class='col-md-1 text-center'>teo</home-block>
+            <home-block class='col-md-1 text-center'>three</home-block>
+            <home-block class='col-md-1 text-center'>four</home-block>
+            <home-block class='col-md-1 text-center'>five</home-block>
+            <home-block class='col-md-1 text-center'>sixe</home-block>
+            <home-block class='col-md-1 text-center'>seven</home-block>
+            <home-block class='col-md-1 text-center'>eight</home-block>
+            <home-block class='col-md-1 text-center'>nine</home-block>
+        </div>
+    </div>
+</div>

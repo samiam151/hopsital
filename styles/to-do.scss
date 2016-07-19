@@ -1,0 +1,18 @@
+.to-do {
+    h1 {
+        margin-bottom: 2%;
+    }
+
+    .show-to-dos {
+        border-right: 3px solid $blue;
+
+        .to-do-li {
+            list-style-type: disc;
+            margin-left: 3%;
+        }
+
+        .to-do-item {
+            font-size: 1.25em;
+        }
+    }
+}

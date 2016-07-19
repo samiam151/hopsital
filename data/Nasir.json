@@ -1,0 +1,17 @@
+{
+    "firstName": "Nasir",
+    "lastName": "bin Olu Dara Jones",
+    "unit": "C5G",
+    "room": "5G45",
+    "phoneNumber": "202-569-8742",
+    "medications": [
+       "Vesicare",
+       "Lunesta"
+    ],
+    "todos" : [
+      "Watch Scandel",
+      "Take medications",
+      "Read the news",
+      "Hire Nick Sam as UI Engineer"
+    ]
+}

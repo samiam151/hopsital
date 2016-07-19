@@ -1,0 +1,19 @@
+{
+    "firstName": "John",
+    "lastName": "Barraza",
+    "unit": "I5D",
+    "room": "3D59",
+    "phoneNumber": "202-569-5295",
+    "medications": [
+        "Copaxone",
+        "Cymbalta",
+        "Vesicare",
+        "Hydrocodone"
+    ],
+    "todos" : [
+      "Change the light bulbs",
+      "Take medications",
+      "Read the news",
+      "Hire Nick Sam as UI Engineer"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "firstName": "Jhane",
+    "lastName": "Jenkins",
+    "unit": "C4C",
+    "room": "4C26",
+    "phoneNumber": "202-569-9911",
+    "medications": [
+        "Senokot",
+        "Vicadon",
+        "Lipitor",
+        "Lyrica"
+    ],
+    "todos" : [
+        "Learn about Java programming",
+        "Take medications",
+        "Read the news",
+        "Hire Nick Sam as UI Engineer"
+    ]
+}

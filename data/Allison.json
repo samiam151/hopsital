@@ -1,0 +1,22 @@
+{
+    "firstName": "Allison",
+    "lastName": "Rachmoninoff",
+    "unit": "J3J",
+    "room": "9J14",
+    "phoneNumber": "202-569-5885",
+    "medications": [
+       "Renvela",
+       "Nexium",
+       "Abilify",
+       "Crestor",
+       "Cymbalta",
+       "Ritalin",
+       "Percocet"
+     ],
+    "todos" : [
+      "Wake up",
+      "Take medications",
+      "Read the news",
+      "Hire Nick Sam as UI Engineer"
+    ]
+}

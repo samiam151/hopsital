@@ -1,0 +1,28 @@
+footer {
+  height: 12%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5); }
+  footer .footer-logo {
+    font-style: bold;
+    font-size: 2em;
+    color: rebeccapurple;
+    margin-top: 1.5%; }
+    footer .footer-logo .smiley {
+      color: #FFD500; }
+  footer .room_info {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 0.75em;
+    word-spacing: 0.15em;
+    letter-spacing: 0.07em;
+    margin-top: 1.5%; }
+  footer .hospital-logo {
+    width: 65%;
+    margin-top: 3%;
+    margin-left: 25%; }
+
+/*# sourceMappingURL=footer.css.map */

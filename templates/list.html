@@ -1,0 +1,14 @@
+<div ng-controller='ListViewController as list' class="container fade-in">
+    <div class="row">
+        <ul class='list-view col-md-6'>
+            <li ng-repeat='item in list.tops' class='list-item'>
+                <p ng-bind='item'></p>
+            </li>
+        </ul>
+        <ul class='list-view col-md-6'>
+            <li ng-repeat='item in list.bottoms' class='list-item'>
+                <p ng-bind='item'></p>
+            </li>
+        </ul>
+    </div>
+</div>

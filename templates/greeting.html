@@ -1,0 +1,27 @@
+<div ng-controller='GreetingController' class="greetingDiv row">
+
+    <!-- Salutation -->
+    <h1 class='greeting col-md-4'>Good Morning<span ng-if="patient.firstName" ng-bind='", " + patient.firstName' class='fade-in'></span>!</h1>
+    
+    <!-- Patient Selection -->
+    <div class="form-group col-md-4 patient-selection">
+        <div class="row">
+            <div class="col-md-8">
+                <label for="sel1">Select Patient:</label>
+                <select name='selectPatient' ng-model='selectPatient' class="form-control">
+                    <option selected="selected">Nasir</option>
+                    <option>Jonathon</option>
+                    <option>Jhane</option>
+                    <option>Allison</option>
+                </select>
+            </div>
+            <div class="col-md-4 submitButton">
+                <input type="submit" ng-click="setPatient(selectPatient)" value='Update' />
+            </div>
+        </div>
+    </div>
+
+    <!-- Time & Date -->
+    <p class='col-md-2 text-center info' id='date'>{{date | date:'longDate'}}</p>
+    <p class='col-md-2 text-center info' id='time'>{{time | date:'mediumTime'}}</p>
+</div>

@@ -1,0 +1,26 @@
+<div class="container fade-in to-do">
+    <div class="row">
+
+        <!-- See To-do's -->
+        <div class="col-md-6 show-to-dos">
+            <h1>Pending Items:</h1>
+
+            <!-- Show if no Patient is selected -->
+            <p ng-show='!patient'>When a Patient is selected, the items on their to-do list will display here.</p>
+
+            <!-- Show if Patient is selected -->
+            <ul>
+                <li ng-repeat="todo in patient.todos" class='to-do-li fade-in'>
+                    <p class='to-do-item'>{{ todo }}</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Add To-Do -->
+        <div class="col-md-5 col-md-offset-1">
+            <h3>Add an Item</h3>
+            <input type="text" class='form-control' placeholder="Enter new item."/>
+            <button type="submit" class="btn btn-default">Add Item</button>
+        </div>
+    </div>
+</div>
