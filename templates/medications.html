@@ -1,0 +1,12 @@
+<div class="container" ng-controller="MedicationsController">
+    <div class="row">
+        <h2>My Medications</h2>
+
+        <!-- If patient is NOT selected -->
+        <p ng-show='!patient'>When the patient is selected, their medications will show here.</p>
+
+        <!-- If patient is selected -->
+        <!--<p ng-repeat="med in meds" ng-bind='med'></p>-->
+        <p ng-repeat="med in patient.medications">{{ med }}</p>
+    </div>
+</div>
