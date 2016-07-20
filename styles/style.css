@@ -179,13 +179,26 @@ footer {
 
 .to-do h1 {
   margin-bottom: 2%; }
+.to-do .instructions {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 1% 0%;
+  padding-bottom: 2%;
+  border-bottom: 3px solid #e6d9f2; }
 .to-do .show-to-dos {
   border-right: 3px solid #e6d9f2; }
   .to-do .show-to-dos .to-do-li {
     list-style-type: disc;
-    margin-left: 3%; }
+    margin-left: 3%;
+    cursor: pointer; }
+    .to-do .show-to-dos .to-do-li:hover {
+      color: #9966cc; }
   .to-do .show-to-dos .to-do-item {
     font-size: 1.25em; }
+.to-do .add_item * {
+  margin-bottom: 3%; }
+.to-do .add_item .item_button {
+  background-color: #e6d9f2; }
 
 home-block .home-block-div {
   background-color: #e6d9f2;
@@ -194,7 +207,7 @@ home-block .home-block-div {
     height: 90px; }
   home-block .home-block-div .home-block-content {
     height: 90px;
-    padding: 0% 2%;
+    padding: 1% 2%;
     font-size: 1.5em; }
   home-block .home-block-div:hover {
     outline: 5px solid #ffff99;

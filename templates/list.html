@@ -2,7 +2,9 @@
     <div class="row">
         <ul class='list-view col-md-6'>
             <li ng-repeat='item in list.tops' class='list-item'>
-                <p ng-bind='item.item'></p>
+                <a ng-href={{item.url}}>
+                    <p ng-bind='item.item'></p>
+                </a>
             </li>
         </ul>
         <ul class='list-view col-md-6'>
