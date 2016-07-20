@@ -15,25 +15,23 @@ app.service('DirectionsService', function(){
 
     this.bottomDirections = [
         {
-            item: 'See my medicines',
-            url: '#/medications'
+            item: 'See my medicines'
         },
         {
-            item: 'Browse health videos',
-            url: '#/medications'
+            item: 'Browse health videos'
         },
         {
-            item: 'Watch TV',
-            url: '#/medications'
+            item: 'Watch TV'
         },
         {
-            item: 'Listen to Music',
-            url: '#/medications'
+            item: 'Listen to Music'
         },
         {
-            item: 'Order a meal',
-            url: '#/medications'
-        }   
+            item: 'Order a meal'
+        },
+        {
+            item: 'Share a compliment'
+        }
     ];
 
     // this.allDirections = this.topDirections.concat(this.bottomeDirections);

@@ -1,4 +1,4 @@
-<div class="fade-in" ng-controller='HomeController as home'>
+<div class="fade-in container_95" ng-controller='HomeController as home'>
     <!--Top Row-->
     <div class="row">
         <div class="col-md-3 title-block">Here are some things we would like you to do while you are here.</div>
@@ -13,12 +13,11 @@
     <div class="container">
         <div class="row">
             <div class="bottomRow">
-                <home-block class='col-md-2 text-center'>one</home-block>
-                <home-block class='col-md-2 text-center'>teo</home-block>
-                <home-block class='col-md-2 text-center'>three</home-block>
-                <home-block class='col-md-2 text-center'>four</home-block>
-                <home-block class='col-md-2 text-center'>five</home-block>
-                <home-block class='col-md-2 text-center'>sixe</home-block>
+                <home-block ng-repeat='bottom in home.bottoms' class='col-md-2 text-center'>
+                    <!--<a ng-href={{top.url}}>-->
+                        <p ng-bind='bottom.item'></p>
+                    <!--</a>-->
+                </home-block>
             </div>
         </div>
     </div>
