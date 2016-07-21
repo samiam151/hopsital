@@ -5,10 +5,19 @@
     "room": "3D59",
     "phoneNumber": "202-569-5295",
     "medications": [
-        "Copaxone",
-        "Cymbalta",
-        "Vesicare",
-        "Hydrocodone"
+        {
+            "store_name": "Copaxone",
+            "official_name": "Glatiramer acetate"
+        },{
+            "store_name": "Cymbalta",
+            "official_name": "Duloxetine"
+        },{
+            "store_name": "Vesicare",
+            "official_name": "Solifenacin"
+        },{
+            "store_name": "Hydrocodone",
+            "official_name": "Hydrocodone"
+        }        
     ],
     "illness": "Testicular Cancer",
     "todos" : [

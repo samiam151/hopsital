@@ -1,0 +1,9 @@
+.medication_item {
+    list-style-type: disc;
+    font-size: 1.3em;
+    cursor: pointer;
+
+    &:hover {
+        color: $dark_blue;
+    }
+}

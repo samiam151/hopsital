@@ -5,10 +5,18 @@
     "room": "4C26",
     "phoneNumber": "202-569-9911",
     "medications": [
-        "Senokot",
-        "Vicadon",
-        "Lipitor",
-        "Lyrica"
+        {
+            "store_name": "Senokot",
+            "official_name": "Senna glycoside"
+        },
+        {
+            "store_name": "Lipitor",
+            "official_name": "Atorvastatin"
+        },
+        {
+            "store_name": "Lyrica",
+            "official_name": "Pregabalin" 
+        }
     ],
     "illness": "Muscular Fibrosis",
     "todos" : [

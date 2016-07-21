@@ -200,6 +200,13 @@ footer {
 .to-do .add_item .item_button {
   background-color: #e6d9f2; }
 
+.medication_item {
+  list-style-type: disc;
+  font-size: 1.3em;
+  cursor: pointer; }
+  .medication_item:hover {
+    color: #9966cc; }
+
 home-block .home-block-div {
   background-color: #e6d9f2;
   border-radius: 3px; }

@@ -1,12 +1,30 @@
 <div class="container fade-in" ng-controller="MedicationsController">
     <div class="row">
-        <h2>My Medications</h2>
 
-        <!-- If patient is NOT selected -->
-        <p ng-show='!patient'>When the patient is selected, their medications will show here.</p>
+        <!-- List Medications -->
+        <div class="col-md-5">
+            <h2>My Medications</h2>
 
-        <!-- If patient is selected -->
-        <!--<p ng-repeat="med in meds" ng-bind='med'></p>-->
-        <p ng-repeat="med in patient.medications">{{ med }}</p>
+            <!-- If patient is NOT selected -->
+            <p ng-show='!patient'>When the patient is selected, their medications will show here.</p>
+
+            <!-- If patient is selected -->
+            <li ng-repeat="med in patient.medications" 
+                ng-bind='med.store_name' 
+                ng-click='showInfo(med.official_name, med.store_name)'
+                class='medication_item'>
+            </li>
+        </div>
+        
+        <!-- Medication Information -->
+        <div class="col-md-7">
+            <h3>Medication Information</h3>
+            <p ng-show="!medInfo" class="fade-in">Information about the selected medication will be displayed here.</p>
+            <div class="fade-in">
+                <h3 ng-bind="medInfoHeader"></h3>
+                <div ng-bind="medInfo" ></div>
+                <p ng-show="medInfo">Information from Wikipedia</p>
+            </div>
+        </div>
     </div>
 </div>

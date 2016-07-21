@@ -5,8 +5,14 @@
     "room": "5G45",
     "phoneNumber": "202-569-8742",
     "medications": [
-       "Vesicare",
-       "Lunesta"
+      {
+         "store_name": "Vesicare",
+         "official_name": "Solifenacin"
+      },
+      {
+         "store_name": "Lunesta",
+         "official_name": "Eszopiclone"
+      }
     ],
     "illnes": "High Blood Pressure",
     "todos" : [

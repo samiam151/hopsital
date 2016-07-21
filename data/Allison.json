@@ -5,14 +5,29 @@
     "room": "9J14",
     "phoneNumber": "202-569-5885",
     "medications": [
-       "Renvela",
-       "Nexium",
-       "Abilify",
-       "Crestor",
-       "Cymbalta",
-       "Ritalin",
-       "Percocet"
-     ],
+      {
+          "store_name": "Renvela",
+          "official_name": "Sevelamer"
+      },{
+          "store_name": "Nexium",
+          "official_name": "Esomeprazole"
+      },{
+          "store_name": "Abilify",
+          "official_name": "Aripiprazole"
+      },{
+          "store_name": "Crestor",
+          "official_name": "Rosuvastatin"
+      },{
+          "store_name": "Cymbalta",
+          "official_name": "Duloxetine"
+      },{
+          "store_name": "Ritalin",
+          "official_name": "Methylphenidate"
+      },{
+          "store_name": "Oxycodone",
+          "official_name": "Oxycodone"
+      }  
+    ],
     "illness": "Fibromyalgia",
     "todos" : [
       "Wake up",
