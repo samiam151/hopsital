@@ -6,7 +6,6 @@ app.controller('MasterController', ['PatientService', '$scope', '$log', '$http',
             method: 'GET',
             url: 'data/' + patient + '.json'
         }).success(function(data, status, headers, config){
-            $log.log(data);
             $scope.patient = data;
         }).error(function(data, status, headers, config){
             $log.warn(data, status, headers, config);

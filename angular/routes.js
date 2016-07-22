@@ -13,6 +13,9 @@ app.config(function($routeProvider){
         .when('/medications', {
             templateUrl: 'templates/medications.html'
         })
+        .when('/pain', {
+            templateUrl: 'templates/pain.html'
+        })
         .otherwise({
             redirectTo: '/',
             templateUrl: 'templates/home.html'

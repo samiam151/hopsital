@@ -33,7 +33,14 @@ app.controller('MedicationsController', ['PatientService','$scope', '$log', func
 
                 $scope.medInfo = msg;
                 // $scope.medInfoHeader = data.parse.title;
-                $scope.medInfoHeader = tradename + ' (' + medication + ')';
+
+                if (tradename !== medication){
+                    $scope.medInfoHeader = tradename + ' (' + medication + ')';
+                } else {
+                    $scope.medInfoHeader = tradename;
+                }
+                
+                
             },
             error: function (error) {
                 $log.log(error);

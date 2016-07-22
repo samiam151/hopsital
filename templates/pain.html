@@ -1,0 +1,65 @@
+<div ng-controller="PainController" class='fade-in container pain-div'>
+    <div class="row">
+        <script>
+            console.log(patient);
+        </script>
+        <!-- Header -->
+        <h1 class="view-header">Pain Management Survey</h1>
+
+        <!-- If no patient selected -->
+        <p ng-if='!patient'>
+            When a patient is selected, you can submit a survey documenting your pain and overall perception of health.
+        </p>
+
+        <!-- When patient is selected... -->
+        <div class="col-md-6 fade-in" ng-if='patient'>
+            
+            <!-- Pain Boolean -->
+            <div class="question-div pain-boolean-div">
+                <p>1. Do you feel any pain today?</p>
+                <!--<input class='pain-select' type="button" value='Yes'>
+                <input class='pain-select' type="button" value='No'>-->
+
+                <label class="radio-inline">
+                    <input ng-model='pain' ng-value=true type="radio" name="painBoolean"> Yes
+                </label>
+                <label class="radio-inline">
+                    <input ng-model='pain' ng-value=false type="radio" name="painBoolean"> No
+                </label>
+
+                <!--if there is pain-->
+                <div class="if-pain" ng-if='pain'>
+                    <h4>Rate the Pain:</h4>
+                    <label class="radio-inline" ng-repeat='n in [0,1,2,3,4,5,6,7,8,9,10]'>
+                        <input ng-model='rating' ng-value={{n}} type="radio" name="rating" ng-click='setLevel(rating)'>{{n}}
+                    </label>
+                    <p ng-bind="level"></p>
+                </div>
+            </div>    
+        </div>
+
+        <div class="col-md-6" ng-if='patient'>
+
+            <!-- General Response -->
+            <div class="question-div general-repsonse-div">
+                <p>2. Overall, how are you feeling?</p>
+                <textarea class="form-control" rows="2"></textarea>
+            </div>
+
+            <!-- Hospital Recommendation -->
+            <div class="question-div recommendation-div">
+                <p>3. Would you recommend our hospital?</p>
+                <label class="radio-inline">
+                    <input type="radio" name="recommendBoolean" value="option1"> Yes
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="recommendBoolean" value="option2"> No
+                </label>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class='pain-submit'>Submit</button>
+
+        </div>
+    </div>
+</div>
