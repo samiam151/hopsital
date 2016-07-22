@@ -25,6 +25,11 @@ $dark_blue: darken($blue, 30%);
     width: 95%;
 }
 
+.view-header {
+    color: $dark_blue;
+    margin-bottom: 4%;
+}
+
 // Globals
 @import 'globals';
 

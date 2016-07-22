@@ -32,6 +32,10 @@
   margin: 0 auto;
   width: 95%; }
 
+.view-header {
+  color: #9966cc;
+  margin-bottom: 4%; }
+
 * {
   margin: 0;
   padding: 0;
@@ -200,12 +204,28 @@ footer {
 .to-do .add_item .item_button {
   background-color: #e6d9f2; }
 
+.pre-info {
+  font-size: 1.3em; }
+
 .medication_item {
   list-style-type: disc;
-  font-size: 1.3em;
+  font-size: 1.4em;
   cursor: pointer; }
   .medication_item:hover {
     color: #9966cc; }
+
+.medication-list-div {
+  padding-right: 3%; }
+
+.info-div {
+  border-left: 3px solid #e6d9f2;
+  padding-left: 6%;
+  min-height: 300px; }
+  .info-div .info-header {
+    color: #9966cc; }
+  .info-div .info_source {
+    margin-top: 7%;
+    font-style: italic; }
 
 home-block .home-block-div {
   background-color: #e6d9f2;

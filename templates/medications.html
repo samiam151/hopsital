@@ -2,11 +2,11 @@
     <div class="row">
 
         <!-- List Medications -->
-        <div class="col-md-5">
-            <h2>My Medications</h2>
+        <div class="col-md-5 medication-list-div">
+            <h2 class='view-header'>My Medications</h2>
 
             <!-- If patient is NOT selected -->
-            <p ng-show='!patient'>When the patient is selected, their medications will show here.</p>
+            <p ng-show='!patient' class='pre-info'>When the patient is selected, their medications will show here.</p>
 
             <!-- If patient is selected -->
             <li ng-repeat="med in patient.medications" 
@@ -17,13 +17,13 @@
         </div>
         
         <!-- Medication Information -->
-        <div class="col-md-7">
-            <h3>Medication Information</h3>
-            <p ng-show="!medInfo" class="fade-in">Information about the selected medication will be displayed here.</p>
+        <div class="col-md-7 info-div">
+            <h2 class='view-header'>Medication Information</h2>
+            <p ng-show="!medInfo" class="fade-in pre-info">Information about the selected medication will be displayed here.</p>
             <div class="fade-in">
                 <h3 ng-bind="medInfoHeader"></h3>
                 <div ng-bind="medInfo" ></div>
-                <p ng-show="medInfo">Information from Wikipedia</p>
+                <p ng-show="medInfo" class='info_source'>Information from Wikipedia</p>
             </div>
         </div>
     </div>
