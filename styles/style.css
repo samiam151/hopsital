@@ -139,11 +139,56 @@ header {
   font-size: 2.5em;
   line-height: 1.1em; }
 
+.hoverBorder:hover {
+  outline: 5px solid #ffff99;
+  outline-offset: -5px; }
+
+.blocks {
+  border-radius: 200px; }
+  .blocks .imgContainer {
+    height: 120px; }
+    .blocks .imgContainer img {
+      width: 100%;
+      height: 120px; }
+  .blocks .contentContainer {
+    height: 90px;
+    background-color: rebeccapurple;
+    font-size: 2em; }
+    .blocks .contentContainer:hover {
+      background-color: #4d2673; }
+    .blocks .contentContainer p {
+      color: white;
+      padding: 5% 5%;
+      font-weight: 300;
+      line-height: 1.1em; }
+
+.pad {
+  margin: 5px; }
+
 .bottomRow {
-  margin-top: 2%; }
+  margin-top: 0.75%; }
+  .bottomRow .bottom-blocks {
+    border-radius: 200px;
+    padding: 0.5%; }
+    .bottomRow .bottom-blocks .imgContainer {
+      height: 80px; }
+      .bottomRow .bottom-blocks .imgContainer span {
+        font-size: 4em;
+        padding: 15% 35%;
+        color: white; }
+    .bottomRow .bottom-blocks .contentContainer {
+      height: 100px;
+      background-color: rgba(0, 0, 0, 0.2);
+      font-size: 1.5em;
+      width: 100%; }
+      .bottomRow .bottom-blocks .contentContainer p {
+        color: white;
+        padding: 15% 10%;
+        font-weight: 300;
+        line-height: 1.1em; }
 
 footer {
-  height: 12%;
+  height: 10%;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -165,8 +210,8 @@ footer {
     letter-spacing: 0.07em;
     margin-top: 1.5%; }
   footer .hospital-logo {
-    width: 65%;
-    margin-top: 3%;
+    width: 60%;
+    margin-top: 2%;
     margin-left: 25%; }
 
 .list-view {

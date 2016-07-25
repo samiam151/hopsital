@@ -2,20 +2,43 @@
     <!--Top Row-->
     <div class="row">
         <div class="col-md-3 title-block">Here are some things we would like you to do while you are here.</div>
-        <home-block ng-repeat='top in home.tops' class='col-md-3 text-center'>
-            <a ng-href={{top.url}}>
-                <p ng-bind='top.item'></p>
-            </a>
-        </home-block>
+
+        <!-- home blocks -->
+        <div class="col-md-3 blocks" ng-repeat="top in home.tops">
+            <div class="hoverBorder">
+                <!-- image -->
+                <div class="imgContainer">
+                    <img ng-src='{{top.bg_img}}' alt="bg-image">
+                </div>
+
+                <!-- content -->
+                <div class="contentContainer text-center">
+                    <a ng-href={{top.url}}>
+                        <p ng-bind='top.item'></p>
+                    </a>
+                </div>  
+            </div>
+        </div>
     </div>
 
     <!--Bottom Row-->
-    <div class="container">
-        <div class="row">
-            <div class="bottomRow">
-                <home-block ng-repeat='bottom in home.bottoms' class='col-md-2 text-center'>
-                    <p ng-bind='bottom.item'></p>
-                </home-block>
+    <div class="row">
+        <div class="bottomRow">
+            <div class="col-md-2 bottom-blocks" ng-repeat="bottom in home.bottoms">
+                <div class="hoverBorder">
+                    <!-- image -->
+                    <div class="imgContainer" style="background-color:{{bottom.color}}">
+                        <!--<img ng-src='{{bottom.bg_img}}' alt="bg-image">-->
+                        <span class="glyphicon glyphicon-{{bottom.glyph}}" aria-hidden="true"></span>
+                    </div>
+
+                    <!-- content -->
+                    <div class="contentContainer text-center"  style="background-color:{{bottom.color}};">
+                        <a ng-href={{bottom.url}}>
+                            <p ng-bind='bottom.item'></p>
+                        </a>
+                    </div>  
+                </div>
             </div>
         </div>
     </div>
