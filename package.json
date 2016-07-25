@@ -1,0 +1,26 @@
+{
+  "name": "getwellsoon",
+  "version": "1.0.0",
+  "description": "Simulation of GetWellNetwork 10' view",
+  "main": "index.html",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "bootstrap": "^3.3.6",
+    "jquery": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samiam151/hopsital.git"
+  },
+  "author": "Nicolas Sam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samiam151/hopsital/issues"
+  },
+  "homepage": "https://github.com/samiam151/hopsital#readme"
+}
