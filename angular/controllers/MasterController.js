@@ -4,7 +4,7 @@ app.controller('MasterController', ['PatientService', '$scope', '$log', '$http',
     $scope.setPatient = function(patient){
         $http({
             method: 'GET',
-            url: 'data/' + patient + '.json'
+            url: 'data/patients/' + patient + '.json'
         }).success(function(data, status, headers, config){
             $scope.patient = data;
         }).error(function(data, status, headers, config){
