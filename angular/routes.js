@@ -16,6 +16,9 @@ app.config(function($routeProvider){
         .when('/pain', {
             templateUrl: 'templates/pain.html'
         })
+        .when('/videos', {
+            templateUrl: 'templates/videos.html'
+        })
         .otherwise({
             redirectTo: '/',
             templateUrl: 'templates/home.html'

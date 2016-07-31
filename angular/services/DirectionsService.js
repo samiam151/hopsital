@@ -25,7 +25,7 @@ app.service('DirectionsService', function(){
         {
             item: 'Browse health videos',
             color: '#5499C7',
-            glyph: 'facetime-video'
+            glyph: 'film'
         },
         {
             item: 'Watch TV',

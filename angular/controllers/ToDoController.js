@@ -6,7 +6,7 @@ app.controller('ToDoController', ['$scope', function($scope){
 
     $scope.removeItem = function(item){
         var patient = $scope.$parent.patient,
-            index = patient.todos.indexOf(item);
-        patient.todos.splice(index, 1);
+            indexOfSelectedItem = patient.todos.indexOf(item);
+        patient.todos.splice(indexOfSelectedItem, 1);
     };
 }])
