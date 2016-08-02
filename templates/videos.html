@@ -3,28 +3,14 @@
 
     <p ng-if='!patient'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ut animi praesentium, harum error dignissimos quae aperiam consectetur a vero nam aliquid! Error, facilis animi nihil non a totam ab!</p>
 
-    <div class="row">
+    <div class="row fade-in">
 
-        <div class="videoDiv col-md-3 text-center">
+        <!--<div class="videoDiv col-md-3 text-center">
             <iframe width="100%" src="https://www.youtube.com/embed/D3GiBy6das4" frameborder="1" allowfullscreen></iframe>
             <p>Video Title</p>
-        </div>
-
-        <div class="videoDiv col-md-3 text-center">
-            <iframe width="100%" src="https://www.youtube.com/embed/OIM5LU9lPTs" frameborder="1" allowfullscreen></iframe>
-            <p>Video Title</p>
-        </div> 
-
-        <div class="videoDiv col-md-3 text-center">
-            <iframe width="100%" src="https://www.youtube.com/embed/4mqGB8BFtjQ" frameborder="1" allowfullscreen></iframe>
-            <p>Video Title</p>
-        </div> 
-
-        <div class="videoDiv col-md-3 text-center">
-            <iframe width="100%" src="https://www.youtube.com/embed/8y5ZnmGTGRA" frameborder="1" allowfullscreen></iframe>
-            <p>Video Title</p>
-        </div> 
-
+        </div>-->
+        <p ng-bind='patient.illness' ng-click='getVideos(patient.illness)'></p>
+        <p>{{videos}}</p>
     </div> <!-- end row -->
 
 </div> <!-- end container -->
