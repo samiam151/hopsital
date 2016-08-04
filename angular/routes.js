@@ -1,4 +1,6 @@
 var app = angular.module('app', ['ngRoute']);
+
+// ROUTING SECTION
 app.config(function($routeProvider){
     $routeProvider
         .when('/home', {
@@ -23,9 +25,12 @@ app.config(function($routeProvider){
             redirectTo: '/',
             templateUrl: 'templates/home.html'
         });
-}).config(function($sceDelegateProvider) {
+});
+
+// SET UP $SCE WHITELIST FOR SAFE URL'S
+app.config(function($sceDelegateProvider) {
    $sceDelegateProvider.resourceUrlWhitelist([
      'self',
      '*://www.youtube.com/**'
    ]);
- });;
+});;

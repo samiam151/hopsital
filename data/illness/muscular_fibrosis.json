@@ -1,7 +1,20 @@
 {
     "videos": [
-        "ten",
-        "eleven",
-        "twelve"
+        {
+            "url": "https://www.youtube.com/embed/LvZJKNtNXXc",
+            "title": "Radiation Fibrosis Syndrome"
+        },
+        {
+            "url": "https://www.youtube.com/embed/EN7OssCf1vk",
+            "title": "The CURE For Muscle Dystrophy"
+        },
+        {
+            "url": "https://www.youtube.com/embed/ez_mm9PoUeo",
+            "title": "Congenital Fibrosis of the Extraocular Muscles"
+        },
+        {
+            "url": "https://www.youtube.com/embed/KUMAn5kZW50",
+            "title": "Dr Joel Wallach Discusses Cystic Fibrosis"
+        }
     ]
 }

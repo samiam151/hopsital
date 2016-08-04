@@ -1,12 +1,12 @@
-<div class="container" ng-controller="VideoController">
+<div class="container fade-in" ng-controller="VideoController">
     <!--<h1>Video Page</h1>-->
-    <h2 class="view-header">Here are some videos about <span ng-bind='patient.illness'></span>:</h2>
-    <p ng-if='!patient'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ut animi praesentium, harum error dignissimos quae aperiam consectetur a vero nam aliquid! Error, facilis animi nihil non a totam ab!</p>
+    <h2 class="view-header">Here are some videos educational videos about your condition:</h2>
+    <p ng-if='!patient' class="pre-info">When a user is selected, videos relevant to their condition will be displayed here, ready to watch.</p>
     <div class="row fade-in">
         <p ng-bind='patient.illness' ng-click='getVideos(patient.illness)'></p>
 
         <div ng-repeat="video in videos">
-            <youtube url="{{video.url | trustUrl}}" title="{{video.title}}"></youtube>
+            <youtube url="{{video.url}}" title="{{video.title}}"></youtube>
         </div>
 
     </div> <!-- end row -->

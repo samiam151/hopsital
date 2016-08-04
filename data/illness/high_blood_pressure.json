@@ -1,7 +1,20 @@
 {
     "videos": [
-        "one",
-        "two",
-        "threee"
+        {
+            "url": "https://www.youtube.com/embed/diG519dFVNs",
+            "title": "High Blood Pressure (Hypertension)"
+        },
+        {
+            "url": "https://www.youtube.com/embed/h0w7buQrnAw",
+            "title": "Four Things Your Doctor Didn't Tell You About High Blood Pressure"
+        },
+        {
+            "url": "https://www.youtube.com/embed/AXe5_PcbfXs",
+            "title": "Top 10 Ways To Reduce High Blood Pressure"
+        },
+        {
+            "url": "https://www.youtube.com/embed/tAmLbclSucQ",
+            "title": "Effects of High Blood Pressure on your Body"
+        }
     ]
 }
