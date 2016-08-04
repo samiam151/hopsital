@@ -1,14 +1,7 @@
-app.controller('MasterController', ['PatientService', '$scope', '$log', '$http', function(PatientService, $scope, $log, $http){    
-
-    $scope.patient = null;
+app.controller('MasterController', ['PatientService', '$scope',function(PatientService, $scope){
     $scope.setPatient = function(patient){
-        $http({
-            method: 'GET',
-            url: 'data/patients/' + patient + '.json'
-        }).success(function(data, status, headers, config){
-            $scope.patient = data;
-        }).error(function(data, status, headers, config){
-            $log.warn(data, status, headers, config);
+        PatientService.getPatient(patient).then(function(Data){
+            $scope.patient = Data.data;
         });
-    };
+    }
 }]);

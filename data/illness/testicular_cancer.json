@@ -1,7 +1,20 @@
 {
     "videos": [
-        "seven",
-        "eight",
-        "nine"
+        {
+            "url": "https://www.youtube.com/v/l5uJcWqWGw8",
+            "title": "Fibromyalgia"
+        },
+        {
+            "url": "https://www.youtube.com/v/S5u7KVTtSAk",
+            "title": "Pfizer's Dr. Freda Lewis-Hall Discusses Fibromyalgia"
+        },
+        {
+            "url": "https://www.youtube.com/v/hBcfhpwCOWU",
+            "title": "Fibromyalgia: Explaining it to your loved ones"
+        },
+        {
+            "url": "https://www.youtube.com/v/7F61vIMDG7s",
+            "title": "Living with fibromyalgia"
+        }
     ]
 }

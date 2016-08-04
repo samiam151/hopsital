@@ -23,4 +23,9 @@ app.config(function($routeProvider){
             redirectTo: '/',
             templateUrl: 'templates/home.html'
         });
-});
+}).config(function($sceDelegateProvider) {
+   $sceDelegateProvider.resourceUrlWhitelist([
+     'self',
+     '*://www.youtube.com/**'
+   ]);
+ });;
