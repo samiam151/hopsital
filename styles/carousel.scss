@@ -1,0 +1,34 @@
+.moveButton {
+    vertical-align: top;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 75vw;
+    white-space: nowrap;
+    border: 5px solid black;
+
+    .carouselInner {
+        position: relative;
+        right: 0;
+        left: 0;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+    }
+
+    .boxes {
+        display: inline-block;
+        height: 200px;
+        width: 18.75vw;
+        background-color:green;
+        box-sizing: border-box;
+        border: 5px solid white;
+        margin-right: -4px;
+        outline: 5px solid black;
+        outline-offset: -10px;
+
+        p {
+            padding: 10%;
+        }
+    }
+}

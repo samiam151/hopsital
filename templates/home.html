@@ -4,7 +4,7 @@
         <div class="col-md-3 title-block">Here are some things we would like you to do while you are here.</div>
 
         <!-- home blocks -->
-        <div class="col-md-3 blocks" ng-repeat="top in home.tops">
+        <div class="col-md-3 blocks boxes" ng-repeat="top in home.tops">
             <div class="hoverBorder">
                 <!-- image -->
                 <div class="imgContainer">
@@ -18,14 +18,13 @@
                     </a>
                 </div>  
             </div>
-        </div>
+        </div> <!-- end home_blocks -->
     </div>
 
     <!--Bottom Row-->
     <div class="row">
-        <div class="bottomRow">
+        <div class="bottomRow boxes">
             <div class="col-md-2 bottom-blocks" ng-repeat="bottom in home.bottoms">
-                <!--<div class="hoverBorder">-->
                     <!-- image -->
                     <div class="imgContainer" style="background-color:{{bottom.color}}">
                         <!--<img ng-src='{{bottom.bg_img}}' alt="bg-image">-->
@@ -39,7 +38,6 @@
                         </a>
                     </div>  
                 </div>
-            <!--</div>-->
         </div>
     </div>
 </div>
