@@ -4,36 +4,29 @@
     opacity: 1\9; }
   to {
     opacity: 1; } }
-@-moz-keyframes fadeIn {
-  from {
-    opacity: 0;
-    opacity: 1\9; }
-  to {
-    opacity: 1; } }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
     opacity: 1\9; }
   to {
     opacity: 1; } }
+
 .fade-in {
   opacity: 0;
   -webkit-animation: fadeIn ease-in 1;
-  -moz-animation: fadeIn ease-in 1;
-  animation: fadeIn ease-in 1;
+          animation: fadeIn ease-in 1;
   -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-animation-duration: 0.45s;
-  -moz-animation-duration: 0.45s;
-  animation-duration: 0.45s; }
+          animation-duration: 0.45s; }
 
 .container_95 {
   margin: 0 auto;
   width: 95%; }
 
 .view-header {
-  color: #9966cc;
+  color: red;
   margin-bottom: 4%; }
 
 * {
@@ -46,9 +39,11 @@ body {
 
 a:hover {
   text-decoration: none; }
+
 a:visited {
   color: initial;
   text-decoration: none; }
+
 a:focus {
   text-decoration: none; }
 
@@ -86,6 +81,7 @@ li {
 
 header {
   background: #e6d9f2;
+  background: -webkit-linear-gradient(left, #e6d9f2, transparent 70%);
   background: linear-gradient(to right, #e6d9f2, transparent 70%);
   margin-bottom: 2%; }
   header .logoDiv {
@@ -111,6 +107,7 @@ header {
         color: #592d86; }
   header .logoDivBorder {
     height: 7px;
+    background: -webkit-linear-gradient(left, #9966cc, transparent 60%);
     background: linear-gradient(to right, #9966cc, transparent 60%); }
   header .buttons {
     display: inline-block;
@@ -228,12 +225,14 @@ footer {
 
 .to-do h1 {
   margin-bottom: 2%; }
+
 .to-do .instructions {
   font-size: 1.5em;
   font-weight: 300;
   margin: 1% 0%;
   padding-bottom: 2%;
   border-bottom: 3px solid #e6d9f2; }
+
 .to-do .show-to-dos {
   border-right: 3px solid #e6d9f2; }
   .to-do .show-to-dos .to-do-li {
@@ -244,8 +243,10 @@ footer {
       color: #9966cc; }
   .to-do .show-to-dos .to-do-item {
     font-size: 1.25em; }
+
 .to-do .add_item * {
   margin-bottom: 3%; }
+
 .to-do .add_item .item_button {
   background-color: #e6d9f2; }
 
@@ -310,5 +311,3 @@ home-block .home-block-div {
   home-block .home-block-div:hover {
     outline: 5px solid #ffff99;
     outline-offset: -5px; }
-
-/*# sourceMappingURL=style.css.map */

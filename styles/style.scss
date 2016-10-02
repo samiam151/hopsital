@@ -8,16 +8,10 @@ $fade_in_time: 0.45s;
 @keyframes fadeIn { from { opacity:0; opacity: 1\9;} to { opacity:1; } }
 .fade-in {
     opacity:0;
-    -webkit-animation:fadeIn ease-in 1;
-    -moz-animation:fadeIn ease-in 1;
     animation:fadeIn ease-in 1;
 
-    -webkit-animation-fill-mode:forwards;
-    -moz-animation-fill-mode:forwards;
     animation-fill-mode:forwards;
 
-    -webkit-animation-duration:$fade_in_time;
-    -moz-animation-duration:$fade_in_time;
     animation-duration:$fade_in_time;
 }
 
@@ -27,7 +21,8 @@ $fade_in_time: 0.45s;
 }
 
 .view-header {
-    color: $dark_blue;
+    // color: $dark_blue;
+    color: red;
     margin-bottom: 4%;
 }
 
